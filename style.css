@@ -1,95 +1,99 @@
-
+/* Importa la fuente Poppins de Google Fonts.*/
 * {
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
     margin: 0;
-    padding: 0;
+    padding: 0; /* Reinicia los márgenes y rellenos a cero para todos los elementos.*/
   }
   
   body {
-    font-family:"Poppins", sans-serif;
+    font-family:"Poppins", sans-serif; /* Establece la fuente Poppins como la fuente predeterminada para el cuerpo.*/
   }
   
   html {
-   scroll-behavior: smooth;
+   scroll-behavior: smooth; /*Establece el comportamiento de desplazamiento del HTML como suave.*/
   }
   
   p {
-    color: rgb(85, 85, 85);
+    color: rgb(85, 85, 85); /*Establece el color del texto de los párrafos en negro.*/
   }
   
    a,
    .btn {
-   transition: all 300ms ease;
+   transition: all 300ms ease; /* Establece una transición de 300 milisegundos para todos los enlaces y botones.*/
+
   }
   
   nav,
   .nav-links{
-    display: flex;
+    display: flex; /* Establece la navegación como un elemento flexible.*/
+
   }
 
   nav {
-justify-content: space-around;
-align-items: center;
-height: 17vh;
+justify-content: space-around;/* Justifica el contenido de la barra de navegación horizontalmente y lo alinea verticalmente en el centro.*/
+align-items: center;/* se utiliza para alinear los elementos de la barra de navegación en el centro. Esto significa que los enlaces de navegación estarán centrados horizontalmente y verticalmente en la barra de navegación.*/
+height: 17vh;  /* Establece la altura de la barra de navegación en 17vh.*/
   }
 
   .nav-links{
-    gap:2rem;
-   list-style: none;
-   font-size: 1.5rem;
+    gap:2rem; /*  Establece un espacio de 2rem entre los enlaces de navegación.*/
+   list-style: none;/*  Elimina el estilo de lista de los enlaces de navegación.*/
+   font-size: 1.5rem;/*  Establece el tamaño de fuente de los enlaces de navegación en 1.5rem.*/
   }
 
   a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color:white ;
+    color: black; /* Establece el color del texto de los enlaces de navegación en negro.*/
+    text-decoration: none;/* Elimina la decoración del texto de los enlaces de navegación.*/
+    text-decoration-color:white ;/*  Establece el color de la decoración del texto de los enlaces de navegación en blanco.*/
   }
 
   a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    color: grey;/*  Establece el color del texto de los enlaces de navegación cuando se pasa el cursor sobre ellos en gris.*/
+    text-decoration: underline;/*  Agrega una línea inferior al texto de los enlaces de navegación cuando se pasa el cursor sobre ellos.*/
+    text-underline-offset: 1rem; /* se utiliza para establecer la distancia entre el texto y el borde inferior de la línea inferior de los enlaces de navegación en 1rem. Esto significa que la línea inferior estará a 1rem por debajo del texto.*/
+    text-decoration-color: rgb(181, 181, 181);/* Establece el color de la línea inferior del texto de los enlaces de navegación en rgb(181, 181, 181).*/
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 2rem; /* Establece el tamaño de fuente del logotipo en 2rem.*/
   }
 
   .logo:hover{
-    cursor: default;
+    cursor: default;/* Establece el cursor del logotipo en predeterminado cuando se pasa el cursor sobre él.*/
   }
 
   #hamburger-nav {
-    display: none;
+    display: none;/* Establece el menú hamburguesa como oculto inicialmente.*/
   }
 
 .hamburger.menu{
-  position: relative;
-  display: inline-block;
+  position: relative;/* establece el icono del menú hamburguesa en una posición relativa a su padre. Esto significa que el icono del menú hamburguesa se colocará en el lugar que le indique su estilo, pero no se moverá con el resto del contenido de la página.*/
+  display: inline-block;/*  establece el icono del menú hamburguesa como un elemento en línea-bloque. Esto significa que el icono del menú hamburguesa se comportará como un elemento en línea, pero tendrá un ancho y un alto definidos.*/
 }
 
 .hamburger.icon{
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+  display: flex;/* Establece el icono del menú hamburguesa como un elemento flexible.*/
+  justify-content:space-between; /* se utiliza para alinear los elementos de la barra de navegación en el eje principal. Esto significa que los enlaces de navegación se distribuirán uniformemente entre los bordes izquierdo y derecho de la barra de navegación.*/
+  flex-direction: column; /* se utiliza para establecer la dirección de los elementos de la barra de navegación en vertical. Esto significa que los enlaces de navegación se colocarán uno debajo del otro.*/
+  height: 24px;/* Establece la altura del icono del menú hamburguesa en 24px.*/
+  width: 30px; /* Establece el ancho del icono del menú hamburguesa en 30px.*/
+  cursor: pointer; /* Establece el cursor del icono del menú hamburguesa en puntero.*/
 }
 
 .hamburger.icon span{
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  width: 100%; /*  Establece el ancho de cada span en el icono del menú hamburguesa en 100%.*/
+  height: 2px;/* Establece la altura de cada span en el icono del menú hamburguesa en 2px.*/
+  background-color: black;/*Establece el color de fondo de cada span en el icono del menú hamburguesa en negro.*/
+  transition: all 0.3 ease-in-out;/* se utiliza para establecer una transición de 0,3 segundos para todos los enlaces y botones. Esto significa que los cambios en las propiedades CSS de los enlaces y botones se realizarán de forma gradual, creando un efecto de animación.*/
 }
 
 .menu-links{
-  position: absolute;
-  top:100%;
-  right: 0;
-  background-color: white;
+  position: absolute;/* Este estilo establece el posicionamiento del contenedor de enlaces de menú en absoluto. Esto significa que el contenedor se posicionará relativo a su antepasado más cercano con un contexto de posicionamiento (generalmente el elemento padre).*/
+  top:100%;/* Este estilo coloca el borde superior del contenedor de enlaces de menú a 100% por debajo de su elemento padre. Esto oculta efectivamente el contenedor inicialmente.*/
+  right: 0; /* Este estilo coloca el borde derecho del contenedor de enlaces de menú al ras con el borde derecho de su elemento padre. Esto alinea el contenedor con el lado derecho del padre.*/
+  background-color: white;/* Este estilo establece el color de fondo del contenedor de enlaces de menú en blanco.*/
+
+
   width: fit-content;
   max-height: 0;
   overflow: hidden;
